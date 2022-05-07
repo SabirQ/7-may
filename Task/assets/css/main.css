@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: whitesmoke; }
+
+.cus-modal {
+  width: 100%;
+  height: 80px;
+  background-color: whitesmoke; }
+
+.cus-container {
+  width: 90%;
+  background-color: whitesmoke;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+.cus-todo {
+  width: 25%;
+  min-height: 700px;
+  background-color: white;
+  border-radius: 20px;
+  transition: all 0.5s; }
+  .cus-todo h2 {
+    margin: 10px;
+    text-align: center;
+    color: #575656;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+  .cus-todo div {
+    min-height: 80%; }
+    .cus-todo div div {
+      width: 90%;
+      height: 40px;
+      background-color: rgba(63, 245, 199, 0.603);
+      margin: 10px auto;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      cursor: move; }
+      .cus-todo div div p {
+        width: 95%;
+        margin: 0 auto;
+        color: #666; }
+      .cus-todo div div form {
+        width: 100%;
+        height: 100%; }
+        .cus-todo div div form input {
+          width: 100%;
+          height: 100%;
+          font-size: large; }
+
+.cus-doing {
+  width: 25%;
+  min-height: 700px;
+  background-color: white;
+  border-radius: 20px;
+  transition: all 0.5s; }
+  .cus-doing h2 {
+    margin: 10px;
+    text-align: center;
+    color: #575656;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+  .cus-doing div {
+    min-height: 80%; }
+    .cus-doing div div {
+      width: 90%;
+      height: 40px;
+      background-color: rgba(213, 238, 143, 0.466);
+      margin: 10px auto;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      cursor: move; }
+      .cus-doing div div p {
+        width: 95%;
+        margin: 0 auto;
+        color: #666; }
+
+.cus-done {
+  width: 25%;
+  min-height: 700px;
+  background-color: white;
+  border-radius: 20px;
+  transition: all 0.5s; }
+  .cus-done h2 {
+    margin: 10px;
+    text-align: center;
+    color: #575656;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+  .cus-done div {
+    min-height: 80%; }
+    .cus-done div div {
+      width: 90%;
+      height: 40px;
+      background-color: rgba(81, 255, 0, 0.466);
+      margin: 10px auto;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      cursor: move; }
+      .cus-done div div p {
+        width: 95%;
+        margin: 0 auto;
+        color: #666; }
+
+.item-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1; }
+
+.cus-input {
+  width: 90%;
+  height: 40px;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-between; }
+  .cus-input div {
+    height: 100%;
+    width: 10%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: end; }
+    .cus-input div button {
+      width: 100%;
+      border-radius: 5px;
+      height: 100%;
+      margin-left: 2%;
+      border: none;
+      background-color: rgba(255, 38, 0, 0.555);
+      color: white;
+      border: 2px dashed crimson; }
+  .cus-input form {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 25%;
+    border-radius: 5px; }
+    .cus-input form input {
+      width: 100%;
+      height: 100%;
+      border-radius: 5px;
+      padding: 0 5px;
+      font-size: large;
+      border-color: rgba(0, 255, 255, 0.603); }
+    .cus-input form button {
+      width: 25%;
+      border-radius: 5px;
+      height: 100%;
+      margin-left: 2%;
+      border: none;
+      background-color: aqua;
+      color: #666;
+      transition: all 0.3s; }
+
+#btn:hover {
+  box-shadow: 0 0 15px rgba(63, 245, 199, 0.603); }
+
+#todo:hover {
+  box-shadow: 0 0 15px rgba(63, 245, 199, 0.603); }
+
+#doing:hover {
+  box-shadow: 0 0 15px rgba(213, 238, 143, 0.466); }
+
+#done:hover {
+  box-shadow: 0 0 15px rgba(81, 255, 0, 0.466); }
