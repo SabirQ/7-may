@@ -61,17 +61,17 @@ function drag(){
    
        
     });
-
-    trash.addEventListener("dragenter",()=>{
+    trash.addEventListener("dragover",(e)=>{
+e.preventDefault();
+        
+       
+       })
+    trash.addEventListener("drop",()=>{
 
         
      const dragged=document.querySelector(".drag-item");
      if(dragged!=null){
             dragged.remove();
-     }
-    
-        
-        
-      
+     } 
     })
 }
