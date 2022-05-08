@@ -29,6 +29,7 @@ function drag(){
     const items=document.querySelectorAll(".cus-item");
     const trash=document.getElementById("btnDel")
    
+   
     
    
     items.forEach((item)=>{
@@ -61,17 +62,22 @@ function drag(){
    
        
     });
+    trash.addEventListener("dragenter",()=>{ 
+        trash.classList.add("trash-hovered");       
+    })
+    trash.addEventListener("dragleave",()=>{
+        trash.classList.remove("trash-hovered");
+    })
+               
     trash.addEventListener("dragover",(e)=>{
-e.preventDefault();
-        
-       
-       })
-    trash.addEventListener("drop",()=>{
+       e.preventDefault();
+    })
 
-        
+    trash.addEventListener("drop",()=>{
      const dragged=document.querySelector(".drag-item");
      if(dragged!=null){
             dragged.remove();
-     } 
+     }
+     trash.classList.remove("trash-hovered");
     })
 }

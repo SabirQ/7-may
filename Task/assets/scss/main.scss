@@ -183,6 +183,10 @@ flex-direction: row;
         }
     }
 }
+.trash-hovered{
+    box-shadow: 0 0 10px rgba(197, 8, 8, 0.863);
+    
+}
 #btn:hover{
     box-shadow: 0 0 15px rgba(63, 245, 199, 0.603);
     
